@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Online Barcode Generator</title>
+<meta name="description" content="Free online barcode generator for Code 128, EAN, UPC, Code 39 and more. Make single or bulk barcodes and download PNG, SVG or ZIP files.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2a1b4d;--violet:#5b2fc9;--pink:#ff5fa2;--lav:#f4eeff;--mist:#e3d6ff;--line:#d9c9fb}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff}
+h1,h2,h3,.logo{font-family:Sora,system-ui,sans-serif;line-height:1.2}
+a{color:var(--violet)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--ink);color:#fff;padding:14px 0}
+.logo{font-weight:700;font-size:20px}.logo b{color:var(--pink)}
+.hero{background:linear-gradient(135deg,var(--lav),var(--mist));padding:48px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+.hero h1{font-size:clamp(32px,5vw,48px);margin:0 0 14px}
+.hero p{margin:0;max-width:46ch}
+.hero svg{width:100%;height:auto}
+.tool{background:#fff;border:2px solid var(--violet);border-radius:14px;padding:22px;margin:-32px auto 48px;position:relative;box-shadow:0 10px 0 var(--pink)}
+.tool h2{margin:0 0 12px;font-size:22px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+label{display:block;font-weight:600;font-size:15px;margin:10px 0 4px}
+textarea,select,input[type=number]{width:100%;font:inherit;padding:9px 10px;border:1.5px solid var(--line);border-radius:8px;color:var(--ink);background:#fff}
+textarea{min-height:150px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:15px}
+.row{display:flex;gap:12px;align-items:end}.row>div{flex:1}
+.chk{display:flex;align-items:center;gap:8px;margin-top:12px;font-weight:600}
+.hint{font-size:14px;color:#5d4f80;margin:6px 0 0}
+.btns{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+button{font:600 16px Sora,system-ui,sans-serif;padding:11px 18px;border:0;border-radius:8px;background:var(--violet);color:#fff;cursor:pointer}
+button.alt{background:var(--pink);color:var(--ink)}
+button:hover{filter:brightness(1.1)}
+#out{background:var(--lav);border-radius:10px;padding:12px;max-height:420px;overflow:auto;display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start;min-height:200px}
+#out svg{background:#fff;border-radius:6px;max-width:100%;height:auto}
+#err{color:#b0124f;font-weight:600;margin:8px 0 0;min-height:1.4em}
+article{max-width:760px;margin:0 auto;padding-bottom:40px}
+article h2{font-size:28px;margin:44px 0 12px;padding-top:14px;border-top:4px solid var(--pink);width:fit-content}
+article h3{font-size:21px;margin:28px 0 6px;color:var(--violet)}
+article p,article li{max-width:68ch}
+article li{margin:4px 0}
+.pic{display:block;width:min(100%,380px);height:auto;margin:20px 0}
+footer{background:var(--ink);color:#cfc2ee;padding:22px 0;text-align:center;font-size:15px}
+@media(max-width:760px){.hero .wrap,.grid{grid-template-columns:1fr}.hero svg{max-width:320px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><span class="logo">Barcode<b>.</b>Generator</span></div></header>
+
+<section class="hero"><div class="wrap">
+<div><h1>Free Online Barcode Generator</h1><p>Type your numbers, pick a format and download print-ready barcodes. One barcode or a whole list.</p></div>
+<svg viewBox="0 0 360 300" role="img" aria-label="Phone scanning a barcode next to a parcel">
+<circle cx="180" cy="150" r="132" fill="#fff" opacity=".6"/>
+<polygon points="40,196 130,156 220,196 130,236" fill="#ff9ac6"/>
+<polygon points="40,196 130,236 130,288 40,248" fill="#ff5fa2"/>
+<polygon points="130,236 220,196 220,248 130,288" fill="#c93a80"/>
+<g fill="#fff"><rect x="54" y="226" width="4" height="22"/><rect x="62" y="230" width="2" height="22"/><rect x="68" y="232" width="5" height="22"/><rect x="78" y="236" width="2" height="22"/><rect x="85" y="238" width="4" height="22"/><rect x="94" y="242" width="2" height="22"/></g>
+<rect x="196" y="24" width="120" height="216" rx="18" fill="#2a1b4d"/>
+<rect x="205" y="42" width="102" height="180" rx="8" fill="#fff"/>
+<g fill="#2a1b4d"><rect x="216" y="86" width="5" height="70"/><rect x="226" y="86" width="2" height="70"/><rect x="232" y="86" width="7" height="70"/><rect x="243" y="86" width="3" height="70"/><rect x="250" y="86" width="5" height="70"/><rect x="259" y="86" width="2" height="70"/><rect x="265" y="86" width="6" height="70"/><rect x="275" y="86" width="3" height="70"/><rect x="282" y="86" width="5" height="70"/></g>
+<rect x="210" y="118" width="92" height="4" rx="2" fill="#ff5fa2"/>
+<rect x="232" y="170" width="48" height="8" rx="4" fill="#e3d6ff"/>
+</svg>
+</div></section>
+
+<main class="wrap">
+<section class="tool" aria-label="Barcode generator tool">
+<h2>Make your barcodes</h2>
+<div class="grid">
+<div>
+<label for="data">Values (one per line)</label>
+<textarea id="data" spellcheck="false">ABC-abc-1234</textarea>
+<p class="hint">For a caption, press Tab after the value and type the text. Press Esc then Tab to leave this box.</p>
+<div class="row">
+<div><label for="fmt">Barcode type</label>
+<select id="fmt"><option value="CODE128">Code 128</option><option value="EAN13">EAN-13</option><option value="EAN8">EAN-8</option><option value="UPC">UPC-A</option><option value="CODE39">Code 39</option><option value="ITF14">ITF-14</option><option value="codabar">Codabar</option><option value="pharmacode">Pharmacode</option><option value="MSI">MSI Plessey</option></select></div>
+<div><label for="h">Height (px)</label><input id="h" type="number" value="80" min="20" max="300"></div>
+</div>
+<label class="chk"><input id="txt" type="checkbox" checked> Show text under the bars</label>
+<div class="btns"><button id="svgb">Download SVG</button><button id="pngb" class="alt">Download PNG</button></div>
+<p class="hint">Several barcodes download together as one ZIP file.</p>
+</div>
+<div><label>Preview</label><div id="out" aria-live="polite"></div><p id="err" role="alert"></p></div>
+</div>
+</section>
+
+<article>
+<p>This online <a href="https://barcode-maker.com/">barcode generator</a> creates barcodes from any number or text you type in. Choose a format, set the size and download the image. It works for a single barcode or a long list, and the files are ready to print.</p>
+
+<p>On this page you'll find how to use the tool, what each barcode type is used for, and a few things to check before you print your labels.</p>
+
+<h2>How to Create a Barcode Online</h2>
+<ol>
+<li>Type or paste your data into the input box. Each line makes one barcode.</li>
+<li>Pick the barcode type, for example Code 128, EAN-13, UPC-A or Code 39.</li>
+<li>Set the height and width, and choose whether the number shows under the bars.</li>
+<li>Download the barcode as PNG or SVG. If you made several, they download as a ZIP file.</li>
+</ol>
+<p>If your data doesn't fit the format you picked, the barcode won't generate. EAN-13, for example, only takes digits. Correct the value or switch to a format that accepts letters.</p>
+
+<h2>Barcode Types and Formats</h2>
+<p>Each format was designed for a particular job, and some of them accept only digits. These are the ones people use most.</p>
+<h3>Code 128</h3>
+<p>Code 128 accepts letters, numbers and symbols, and it produces short barcodes. When the data is all digits, it stores them in pairs, which keeps the barcode small. Warehouses, shipping companies and inventory systems use it more than any other format.</p>
+<p>It has three subsets: 128A for uppercase letters and control characters, 128B for upper and lower case, and 128C for digits only. The generator picks the right one for your data, and you can choose a subset yourself if a scanner or a client asks for it. GS1-128 is a related format that holds extra details such as batch numbers and expiry dates. It is common in logistics and healthcare.</p>
+<h3>Code 39</h3>
+<p>Code 39 takes uppercase letters, digits and a few symbols. It is older than Code 128 and needs more space, but nearly every scanner can read it. You will see it on ID badges, equipment tags and in automotive and defense paperwork.</p>
+<h3>EAN-13 and EAN-8</h3>
+<p>EAN-13 is the retail barcode used in most countries outside North America. It has 13 digits, and the last one is a check digit that the tool works out for you. EAN-8 is a shorter version for small packages.</p>
+<h3>UPC-A and UPC-E</h3>
+<p>UPC-A has 12 digits and is the standard retail barcode in the United States and Canada. UPC-E is a shortened form for small products.</p>
+<h3>2D Barcodes</h3>
+<p>Two-dimensional codes hold more data in a small square. Data Matrix is used on small parts and electronics, PDF417 on boarding passes and driver licenses, and Aztec Code on tickets. QR codes are the best known type and suit links and short text.</p>
+<h3>Other Formats</h3>
+<p>ITF-14 is printed on shipping cartons. Codabar is still used in libraries and blood banks, and Pharmacode on medicine packaging. ISBN, ISMN and ISSN are for books, sheet music and periodicals.</p>
+
+<h2>Bulk Barcode Generator</h2>
+<p>If you have a long list of SKUs, serial numbers or asset tags, you don't need to make the barcodes one by one. Paste the list with one value per line, or copy a column from Excel or a CSV file. Every line becomes its own barcode.</p>
+<svg class="pic" viewBox="0 0 380 190" role="img" aria-label="A stack of three barcode labels">
+<rect x="10" y="10" width="360" height="170" rx="16" fill="#f4eeff"/>
+<g stroke="#5b2fc9" stroke-width="2"><rect x="50" y="26" width="200" height="46" rx="8" fill="#fff"/><rect x="80" y="62" width="200" height="46" rx="8" fill="#fff"/></g>
+<rect x="110" y="98" width="220" height="62" rx="8" fill="#fff" stroke="#ff5fa2" stroke-width="3"/>
+<g fill="#2a1b4d"><rect x="126" y="108" width="4" height="30"/><rect x="134" y="108" width="2" height="30"/><rect x="140" y="108" width="6" height="30"/><rect x="150" y="108" width="3" height="30"/><rect x="157" y="108" width="5" height="30"/><rect x="166" y="108" width="2" height="30"/><rect x="172" y="108" width="6" height="30"/><rect x="182" y="108" width="3" height="30"/><rect x="189" y="108" width="4" height="30"/><rect x="197" y="108" width="2" height="30"/><rect x="203" y="108" width="6" height="30"/></g>
+<rect x="126" y="144" width="84" height="6" rx="3" fill="#ff5fa2"/>
+<rect x="224" y="112" width="90" height="8" rx="4" fill="#e3d6ff"/><rect x="224" y="128" width="60" height="8" rx="4" fill="#e3d6ff"/>
+</svg>
+<p>You can also add a caption under a barcode. Type the barcode value, press Tab, then type the text you want shown. This helps when the scanned number is different from what a person needs to read, like a product name or a shelf location.</p>
+<p>Several barcodes download together in one ZIP file.</p>
+
+<h2>Which Barcode Format Should You Use?</h2>
+<ul>
+<li>Retail products: EAN-13 in most countries, UPC-A in the US and Canada.</li>
+<li>Inventory and internal stock: Code 128.</li>
+<li>Parcels and pallets: Code 128 or GS1-128. Outer cartons: ITF-14.</li>
+<li>Asset tags and badges: Code 39 or Code 128.</li>
+<li>Small parts and electronics: Data Matrix.</li>
+<li>Books and magazines: ISBN or ISSN.</li>
+</ul>
+<p>If a customer, marketplace or warehouse gives you requirements, follow those first.</p>
+<p>One thing sellers often miss: the tool makes a valid barcode image from whatever number you enter, but it doesn't give you ownership of that number. To sell in stores or on large marketplaces, EAN and UPC numbers usually have to be licensed through GS1. For tracking your own stock, any numbers will do.</p>
+
+<h2>Barcode Size, Quality and Printing Tips</h2>
+<p>A barcode that looks fine on screen can still fail at the checkout. These habits prevent most problems.</p>
+<ul>
+<li>Use dark bars on a white background. Light colors, patterns and glossy surfaces cause misreads.</li>
+<li>Leave blank space on both sides of the barcode, called the quiet zone. Text or graphics too close to the edges can stop it from scanning.</li>
+<li>Scale it evenly. Stretching the width or height changes the bar proportions and breaks the code.</li>
+<li>Don't print too small. A standard EAN-13 is about 37 mm wide at full size and shouldn't go below 80 percent of that.</li>
+<li>Use SVG for large prints. Use PNG when placing the barcode in a document or label template.</li>
+<li>Print one first and scan it with the device you will actually use, then print the rest.</li>
+</ul>
+
+<h2>Download Options</h2>
+<p>You can save barcodes as PNG, JPG, GIF or SVG. A single barcode downloads as an image file, and several come as a ZIP.</p>
+<p>You can also copy a direct link to the barcode image, or a link to the page with your data already filled in. That makes it easy to send a barcode to someone else or use it in another app.</p>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What is the difference between Code 128 and Code 39?</h3>
+<p>Code 128 is more compact and accepts the full ASCII set, including lowercase letters. Code 39 handles only uppercase letters, digits and a few symbols, and it needs more space for the same data. Use Code 128 unless someone specifically asks for Code 39.</p>
+<h3>Can I make many barcodes at once?</h3>
+<p>Yes. Enter one value per line, or paste a column from Excel or a CSV file, and the generator makes a barcode for each line. Multiple barcodes download together as a ZIP file.</p>
+<h3>Do I need to buy numbers to use EAN or UPC barcodes?</h3>
+<p>For retail sales in stores and on major marketplaces, yes. The numbers are normally licensed through GS1. For internal use, like tracking stock inside your own business, you can use your own numbers.</p>
+<h3>Which file format is best for printing?</h3>
+<p>SVG, because it can be enlarged without losing sharpness. PNG works well when you place the barcode in a document or label design at a fixed size.</p>
+<h3>Which barcode type is best for inventory?</h3>
+<p>Code 128. It is compact, accepts letters and numbers, and nearly all scanners support it.</p>
+<h3>Can I use the generator on my phone?</h3>
+<p>Yes. The tool runs in the browser, so it works on phones, tablets and computers.</p>
+
+<h2>Conclusion</h2>
+<p>Choose the format that suits the job, check your data, and print one test label before a full run. This generator handles Code 128, Code 39, EAN, UPC and 2D formats, and the bulk option saves time when your list is long.</p>
+</article>
+</main>
+
+<footer><div class="wrap">Free online barcode generator</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+function render(){
+  const out=$('out');out.innerHTML='';$('err').textContent='';
+  const h=Math.min(300,Math.max(20,+$('h').value||80));
+  $('data').value.split('\n').filter(l=>l.trim()).forEach(l=>{
+    const p=l.split('\t'),v=p[0].trim(),c=(p[1]||v).trim();
+    const s=document.createElementNS('http://www.w3.org/2000/svg','svg');
+    try{
+      JsBarcode(s,v,{format:$('fmt').value,height:h,displayValue:$('txt').checked,text:c,margin:10,background:'#ffffff'});
+      out.appendChild(s);
+    }catch(e){
+      $('err').textContent='"'+v+'" is not valid for '+$('fmt').selectedOptions[0].text+'. Check the length and characters.';
+    }
+  });
+}
+const svgStr=s=>new XMLSerializer().serializeToString(s);
+function toPng(s){
+  return new Promise(res=>{
+    const i=new Image();
+    i.onload=()=>{const c=document.createElement('canvas');c.width=i.width;c.height=i.height;
+      const x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);x.drawImage(i,0,0);c.toBlob(res);};
+    i.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svgStr(s));
+  });
+}
+function save(b,n){const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=n;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
+async function dl(type){
+  const list=[...document.querySelectorAll('#out svg')];
+  if(!list.length)return;
+  const get=async s=>type==='png'?await toPng(s):new Blob([svgStr(s)],{type:'image/svg+xml'});
+  if(list.length===1){save(await get(list[0]),'barcode.'+type);return;}
+  const z=new JSZip();
+  for(let i=0;i<list.length;i++)z.file('barcode-'+(i+1)+'.'+type,await get(list[i]));
+  save(await z.generateAsync({type:'blob'}),'barcodes.zip');
+}
+$('data').addEventListener('keydown',e=>{
+  if(e.key==='Tab'&&!e.shiftKey){
+    e.preventDefault();
+    const t=e.target,a=t.selectionStart;
+    t.value=t.value.slice(0,a)+'\t'+t.value.slice(t.selectionEnd);
+    t.selectionStart=t.selectionEnd=a+1;render();
+  }
+});
+['data','fmt','h','txt'].forEach(id=>$(id).addEventListener('input',render));
+$('svgb').onclick=()=>dl('svg');$('pngb').onclick=()=>dl('png');
+render();
+</script>
+</body>
+</html>
